@@ -1,0 +1,48 @@
+# --------------set-------------------
+print("--------------creating a empty set------------")
+a=set()
+print(a)
+print("--------------creating a  set------------")
+a={10,20,"lava",230,3.4}
+print(a)
+print("---------------Accessing ele---------------")
+for i in a:
+    print(i,end=" ")
+print("-----------adding one element----add()----------")
+a.add("python")
+print(a)
+print("-----------adding muiltple element----update----------")
+a.update([11,22,33])
+print(a)
+print("-----------deleting ele----remove()-or-discard()--------")
+a.remove(11)
+print(a)
+print("a.remove('OOOOO')KeyError: 00000")
+print("-----------deleting ele-----discard()--------")
+a.discard(22)
+print(a)
+a.discard("ooooo")
+print(a)
+print("-----------clearing ele-----a.clear()--------")
+b={12,23,34}
+b.clear()
+print(b,id(b))
+print("-----------copying element ele-----discard()--------")
+b=a.copy()
+print(a)
+print(b)
+print("-----------Passing set to funtion--------")
+def fun(a):
+    print(a)
+fun(a)
+print("-----------Passing and returning set to funtion--------")
+def fun(a):
+    print(a)
+    return a
+y=fun(a)
+print(y)
+print("-----------Getting input from user--------")
+b=set()
+for i in range(4):
+    b.add(int(input()))
+print(b)
